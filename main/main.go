@@ -32,4 +32,7 @@ func getipnum() int {
 func main() { fmt.Println("ggggg") }
 
 //the "export getipnum" comment must be there, can you believe it?
+
+// https://rogchap.com/2020/09/14/running-go-code-on-ios-and-android/
+
 // CGO_ENABLED=1 GOOS=darwin GOARCH=amd64 CC="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk -mios-version-min=10.0" go build -buildmode=c-archive -tags ios -o foo.a ./
